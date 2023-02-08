@@ -1,11 +1,6 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-www.agadirdestination.com	TRUE	/	FALSE	1999999999	sid_1_1	aafcf43b32bda6859608cffc044f61bf
-www.agadirdestination.com	TRUE	/	FALSE	1999999999	PHPSESSID	nacf9fhmcnnhtem9rcss394vj0
-www.tripadvisor.fr	TRUE	/	FALSE	1999999999	TADCID	Qv3hatcclPSSjg3HABQCFdpBzzOuRA-9xvCxaMyI13Lef0HK_mJ9eDRl0jPxM-vlNRWBsFZLYR65sN0e3-v5xC3bD28oKWeK2LE
-.tripadvisor.fr	TRUE	/	FALSE	1999999999	TAUnique	%1%enc%3Adzoe5sVge0%2BlqMoGesEY66wquDJOEeqYZEWslnCwp5U2jHwltRJPGQ%3D%3D
-.tripadvisor.fr	TRUE	/	FALSE	1999999999	TASession	V2ID.DAFA66313BF1A8CABE43C953309CC3B2*SQ.1*HS.recommended*ES.popularity*DS.5*SAS.popularity*FPS.oldFirst*FA.1*TRA.true
-.tripadvisor.fr	TRUE	/	FALSE	1999999999	ServerPool	A
-.tripadvisor.fr	TRUE	/	FALSE	1999999999	TACds	A.1.16124.2.2023-01-13
-www.e-voyageur.com	TRUE	/	FALSE	1999999999	cookie_anonymity_zxcvbnm1673698799_asdf4	cbcad11334c382b3552a5ff1d08fdfcb
+www.sidetriptours.com	TRUE	/	FALSE	1999999999	sessionid	w0939lhpbm82vopcijqju0laptmqi5lw
+www.sidetriptours.com	TRUE	/	FALSE	1999999999	csrftoken	4w1coLpQD1UDnRIJ42WizTz6ATgDcRIwiaMkQ7uI5oPAHV6pG1hwcQTTjqMbTDrx
+www.sidetriptours.com	TRUE	/	FALSE	1999999999	SameSite	Lax
 
