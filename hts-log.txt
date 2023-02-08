@@ -1,0 +1,74 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 14 Jan 2023 12:28:48 at http://www.agadirdestination.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*http://www.agadirdestination.com/*
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f0#f -F  -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.agadirdestination.com/ -O1 "C:\My Web Sites\bbb" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*http://www.agadirdestination.com/* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:28:49	Warning: 	Moved Temporarily for www.agadirdestination.com/robots.txt
+12:28:49	Warning: 	File has moved from www.agadirdestination.com/robots.txt to http://www.agadirdestination.com/accueil/index.html
+12:28:49	Warning: 	Moved Temporarily for www.agadirdestination.com/
+12:28:49	Warning: 	File has moved from www.agadirdestination.com/ to http://www.agadirdestination.com/accueil/index.html
+12:42:07	Warning: 	file not stored in cache due to bogus state (broken size, expected 620280 got 605584): www.agadirdestination.com/library/slider/Excursions/Tiout.jpg
+12:44:13	Warning: 	file not stored in cache due to bogus state (broken size, expected 1228292 got 1213487): www.agadirdestination.com/library/images/Excursions/Maison_argan/Argan__1.png
+12:44:39	Warning: 	file not stored in cache due to bogus state (broken size, expected 1080559 got 1066487): www.agadirdestination.com/library/images/Excursions/ESS/Essaouira__1.png
+12:52:30	Warning: 	file not stored in cache due to bogus state (broken size, expected 608938 got 595992): www.agadirdestination.com/library/slider/Circuits/Fes_tours.jpg
+13:04:45	Warning: 	Retry after error -4 (Incorrect length (793554 Bytes, 958512 expected)) at link www.agadirdestination.com/library/images/Excursions/Quad/Quad_Agadir_0.png (from www.agadirdestination.com/accueil/index.html)
+13:05:16	Warning: 	file not stored in cache due to bogus state (broken size, expected 730321 got 723488): www.agadirdestination.com/library/slider/Contact/005.jpg
+13:07:01	Warning: 	Retry after error -4 (Incorrect length (794888 Bytes, 940244 expected)) at link www.agadirdestination.com/library/images/Excursions/Vallee_Paradis/Paradise_Valley_1.png (from www.agadirdestination.com/accueil/index.html)
+13:15:33	Warning: 	file not stored in cache due to bogus state (broken size, expected 814048 got 812225): www.agadirdestination.com/library/images/Excursions/Marrakech1_AgadirDestination.png
+13:19:49	Warning: 	Unable to test https://www.francecity.com/annuaire-gratuit/images/logoblog.png (loop to same filename)
+13:19:49	Warning: 	link is probably looping, type unknown, aborting: https://www.francecity.com/annuaire-gratuit/images/logoblog.png
+13:19:52	Warning: 	file not stored in cache due to bogus state (broken size, expected 730321 got 725776): www.agadirdestination.com/library/slider/cgv/005.jpg
+13:20:04	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): https://www.e-voyageur.com/logos/images/120x50-blanc.gif
+13:23:39	Warning: 	file not stored in cache due to bogus state (broken size, expected 730321 got 730040): www.agadirdestination.com/library/slider/blog/005.jpg
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/fonts/Lobster.otf (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/av-footer-icons.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/receptionist.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/airplane.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/av-guarantees-shadow.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/bg-loader.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/loader-img.gif (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/cart.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Error: 	"Not Found" (404) at link www.agadirdestination.com/library/img/promo-tag.png (from www.agadirdestination.com/css/main.css)
+13:28:36	Warning: 	Retry after error -4 (Incorrect length (286068 Bytes, 367474 expected)) at link www.agadirdestination.com/library/slider/Excursions/Kasbah_Maroc.jpg (from www.agadirdestination.com/excursions/index.html)
+13:28:50	Warning: 	Retry after error -4 (Incorrect length (605584 Bytes, 620280 expected)) at link www.agadirdestination.com/library/slider/Excursions/Tiout.jpg (from www.agadirdestination.com/excursions/index.html)
+13:28:54	Warning: 	Retry after error -4 (Incorrect length (1213487 Bytes, 1228292 expected)) at link www.agadirdestination.com/library/images/Excursions/Maison_argan/Argan__1.png (from www.agadirdestination.com/excursions/index.html)
+13:29:11	Warning: 	file not stored in cache due to bogus state (broken size, expected 730321 got 715088): www.agadirdestination.com/library/slider/informations-pratiques/005.jpg
+13:30:25	Warning: 	Retry after error -4 (Incorrect length (1066487 Bytes, 1080559 expected)) at link www.agadirdestination.com/library/images/Excursions/ESS/Essaouira__1.png (from www.agadirdestination.com/excursions/index.html)
+13:37:26	Warning: 	Retry after error -4 (Incorrect length (530956 Bytes, 661024 expected)) at link www.agadirdestination.com/library/images/Excursions/Cheval/Cheval_Agadir_2.png (from www.agadirdestination.com/activites/index.html)
+13:39:30	Warning: 	Retry after error -4 (Incorrect length (595992 Bytes, 608938 expected)) at link www.agadirdestination.com/library/slider/Circuits/Fes_tours.jpg (from www.agadirdestination.com/circuits/index.html)
+13:44:30	Warning: 	Retry after error -4 (Incorrect length (723488 Bytes, 730321 expected)) at link www.agadirdestination.com/library/slider/Contact/005.jpg (from www.agadirdestination.com/contact/index.html)
+13:44:32	Warning: 	Moved Temporarily for www.agadirdestination.com/library/
+13:44:32	Warning: 	File has moved from www.agadirdestination.com/library/ to /index.php
+13:44:49	Warning: 	Retry after error -4 (Incorrect length (812225 Bytes, 814048 expected)) at link www.agadirdestination.com/library/images/Excursions/Marrakech1_AgadirDestination.png (from www.agadirdestination.com/excursions/visite-marrakech-express-excursion-marrakech-court.html)
+13:44:49	Warning: 	Retry after error -4 (Incorrect length (272159 Bytes, 367474 expected)) at link www.agadirdestination.com/library/slider/qui-sommes-nous/004.jpg (from www.agadirdestination.com/qui-sommes-nous/index.html)
+13:44:49	Warning: 	Retry after error -4 (Incorrect length (250366 Bytes, 367474 expected)) at link www.agadirdestination.com/library/slider/mentions-legales/004.jpg (from www.agadirdestination.com/mentions-legales/index.html)
+13:44:49	Warning: 	Retry after error -4 (Incorrect length (725776 Bytes, 730321 expected)) at link www.agadirdestination.com/library/slider/cgv/005.jpg (from www.agadirdestination.com/cgv/index.html)
+13:44:49	Warning: 	Retry after error -4 (Incorrect length (278783 Bytes, 367474 expected)) at link www.agadirdestination.com/library/slider/partenaires/004.jpg (from www.agadirdestination.com/partenaires/index.html)
+13:44:50	Error: 	"Too Many Requests" (429) at link https://www.site-touristique.com/wp-content/uploads/2016/08/logo-st.png (from www.agadirdestination.com/partenaires/index.html)
+13:44:50	Warning: 	Retry after error -5 (Unable to get server's address: No such host is known. ) at link www.willgoto.com/images/logo_1_120.gif (from www.agadirdestination.com/partenaires/index.html)
+13:44:50	Error: 	"Forbidden" (403) at link www.a-gites.com/Images/logo88x31.gif (from www.agadirdestination.com/partenaires/index.html)
+13:44:50	Error: 	"Too Many Requests" (429) at link https://www.voyagevirtuel.info/coeur/logo8831vv.gif (from www.agadirdestination.com/partenaires/index.html)
+13:44:50	Warning: 	Retry after error -4 (Incorrect length (730040 Bytes, 730321 expected)) at link www.agadirdestination.com/library/slider/blog/005.jpg (from www.agadirdestination.com/blog/index.html)
+13:44:55	Warning: 	Retry after error -4 (Incorrect length (715088 Bytes, 730321 expected)) at link www.agadirdestination.com/library/slider/informations-pratiques/005.jpg (from www.agadirdestination.com/informations-pratiques/index.html)
+13:50:24	Warning: 	file not stored in cache due to bogus state (broken size, expected 971678 got 956993): www.agadirdestination.com/library/images/Excursions/Tafraout_AgadirDestination.png
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/light-skin-5.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/light-skin-5-retina.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/light-skin-6.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/light-skin-6-retina.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/metro-skin.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/metro-skin-retina.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/contrast-skin.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/skins/contrast-skin-retina.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/templates/device-skin.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/templates/gallery-btns.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/templates/staff-arrows.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Error: 	"Not Found" (404) at link www.agadirdestination.com/css/templates/vertical-arrows.png (from www.agadirdestination.com/css/masterslider.main.css?ver=2.29.0)
+13:53:33	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link www.willgoto.com/images/logo_1_120.gif (from www.agadirdestination.com/partenaires/index.html)
+13:53:33	Warning: 	Retry after error -4 (Incorrect length (956993 Bytes, 971678 expected)) at link www.agadirdestination.com/library/images/Excursions/Tafraout_AgadirDestination.png (from www.agadirdestination.com/excursions/visite-tafraout-et-tiznit-excursion-tafraout-et-tiznit-agadir.html)
+13:53:43	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link www.willgoto.com/images/logo_1_120.gif (from www.agadirdestination.com/partenaires/index.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 24 minutes 55 seconds : 716 links scanned, 669 files written (129647879 bytes overall) [126154137 bytes received at 24760 bytes/sec], 4671434 bytes transferred using HTTP compression in 105 files, ratio 19%, 1.0 requests per connection
+(25 errors, 38 warnings, 0 messages)
