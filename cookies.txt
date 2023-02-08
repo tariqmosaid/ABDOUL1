@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-www.sidetriptours.com	TRUE	/	FALSE	1999999999	sessionid	w0939lhpbm82vopcijqju0laptmqi5lw
-www.sidetriptours.com	TRUE	/	FALSE	1999999999	csrftoken	4w1coLpQD1UDnRIJ42WizTz6ATgDcRIwiaMkQ7uI5oPAHV6pG1hwcQTTjqMbTDrx
-www.sidetriptours.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
