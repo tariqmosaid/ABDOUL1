@@ -49,7 +49,174 @@
         
 
         
+<style type="text/css">*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+.wrapper{
+  position: fixed;
+  top: 0;
+  /*left: -100%;*/
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+ /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+  transition: all 0.6s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  /*left: 0;*/
+  right:0;
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /*left: 20px; */
+  top: 10px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  /*color: #fff;*/
+  /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+ /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+	content: "";
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 30%;
+	width: 40%;
+	border-bottom: 2px solid #000;
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+  transform: translateY(-8px);
+}
+.menu-btn:after{
+  transform: translateY(8px);
+}
 
+
+.close {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: background .2s;
+}
+
+/* closing animation */
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+  border-color: #fff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+  border-color: #fff;
+}
+.wrapper ul{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  height: 10%;
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  line-height: 50px;
+  margin: 5px 30px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+   /*background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);*/
+  /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #1a73e8;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#active:checked ~ .wrapper ul li a{
+  opacity: 1;
+}
+.wrapper ul li a{
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100px);
+}
+#active:checked ~ .wrapper ul li a{
+	transform: none;
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+   transition-delay: .6s;
+  transform: translateX(-100px);
+}
+@media screen and (max-width:800px) {
+  
+}</style>
 
         
         
@@ -105,115 +272,29 @@
                     
                         <div class="uk-navbar-right">
                             
-
-
-
-
-<ul class="uk-navbar-nav uk-visible@m">
-
-    <li class="uk-text-bold">
-        <a class="uk-navbar-item uk-text-uppercase" href="../../services/index.html">services</a>
-    </li>
-    
-    
+                            <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../services/index.html">Services</a></li>
+<li><a href="../../excursions/index.html">excursions</a></li>
+<li><a href="../../transfer/index.html">transfer</a></li>
+<li><a href="../../contact/index.html">contact</a></li>
 </ul>
+</div>
+<div class="content">
+      <div class="title">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    
-                    <div class="uk-navbar-container uk-navbar-justified uk-navbar-transparent uk-float-right uk-hidden@m" uk-navbar>
-                        <div class="uk-navbar-right">
-
-                              <a class="uk-navbar-item uk-bold uk-text-bold uk-text-uppercase uk-text-brand-secondary uk-link-text" href="../../services/index.html">services</a>
-                        </div>
+</div>
                     </div>
 
                 </nav>
             </div>
-        
-        
-            <div class="uk-container uk-container-xlarge uk-background-default uk-padding-remove navbar-sticky">
-                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
-                    
-                        <div class="uk-navbar-left">
-                            
-
-
-<a class="uk-navbar-item uk-logo" href="../../index.html">
-    <img class="uk-preserve logo-dark"
-         width=121 height=32
-         data-src="../../static/images/logo/logo.png"
-         uk-img
-         alt="Abdoul Agadir Logo"
-         />
-
-
-
-
-
-
-</a>
-
-                        </div>
-                    
 
                     
-                        <div class="uk-navbar-right">
-                            
-
-
-
-
-<ul class="uk-navbar-nav uk-visible@m">
-
-    <li class="uk-text-bold">
-        <a class="uk-navbar-item uk-text-uppercase" href="../../services/index.html">services</a>
-    </li>
-    
-    
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
                     
-                    <div class="uk-navbar-container uk-navbar-transparent uk-float-right uk-hidden@m" uk-navbar>
-                        <div class="uk-navbar-right">
-
-                            <a class="uk-navbar-item uk-bold uk-text-lead uk-text-bold uk-text-uppercase uk-text-brand-secondary uk-link-text" href="../../services/index.html">services</a>
-                        </div>
-                    </div>
 
                 </nav>
             </div>
@@ -222,7 +303,16 @@
 
 
     </div>
+                    
 
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"212624254597","welcomeMessage":"hello","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+      
 
 
 
@@ -575,7 +665,7 @@
                 <span style="white-space: nowrap">
                 
                     <span class="uk-visible@s uk-scrollspy-inview uk-icon" defer-uk-icon="icon: bullet; ratio:0.1" style="margin-left: 3px; margin-right: 3px;" uk-icon="icon: bullet; ratio:0.1"><svg width="2.4000000000000004" height="2.4000000000000004" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h24v24h-24zh24v24h-24zh24v24h-24zh24v24h-24z" fill="none"></path><path d="m24 12a12 12 0 0 1-12 12 12 12 0 0 1-12-12 12 12 0 0 1 12-12 12 12 0 0 1 12 12z" color="#000" color-rendering="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"></path></svg></span>
-                    <span class="uk-text-primary"> 40€ pp </span>
+                    <span class="uk-text-primary"> 45€ pp </span>
                 
                     
                         <span class="uk-scrollspy-inview uk-icon" defer-uk-icon="icon: bullet; ratio:0.1" style="margin-left: 3px; margin-right: 3px;" uk-icon="icon: bullet; ratio:0.1"><svg width="2.4000000000000004" height="2.4000000000000004" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h24v24h-24zh24v24h-24zh24v24h-24zh24v24h-24z" fill="none"></path><path d="m24 12a12 12 0 0 1-12 12 12 12 0 0 1-12-12 12 12 0 0 1 12-12 12 12 0 0 1 12 12z" color="#000" color-rendering="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"></path></svg></span>
@@ -780,7 +870,7 @@
 
                         </div>
                         <div class="uk-comment-body">
-                            <p>We had a wonderful tour with Peter visiting the Bone Church,  agadir, and Mikulov on our transfter from zagoura to Agadir.  Peter was knowledgeable, fun, and engaging throughout the day and made sure to our opinions into account for the stops.  The stops were all lovely and we greatly enjoyed his lunch and coffee recommendations.
+                            <p>We had a wonderful tour with Peter visiting the Bone Church, Brno, and Mikulov on our transfter from zagoura to Agadir.  Peter was knowledgeable, fun, and engaging throughout the day and made sure to our opinions into account for the stops.  The stops were all lovely and we greatly enjoyed his lunch and coffee recommendations.
 Highly recommend using Abdoul Agadir as the communication and experience from their team is of the highest quality!</p>
                         </div>
 
@@ -1744,7 +1834,7 @@ Better signage and communication for the pickup would be an improvement.</p>
 
                         </div>
                         <div class="uk-comment-body">
-                            <p>We had a wonderful tour with Peter visiting the Bone Church,  agadir, and Mikulov on our transfter from zagoura to Agadir.  Peter was knowledgeable, fun, and engaging throughout the day and made sure to our opinions into account for the stops.  The stops were all lovely and we greatly enjoyed his lunch and coffee recommendations.
+                            <p>We had a wonderful tour with Peter visiting the Bone Church, Brno, and Mikulov on our transfter from zagoura to Agadir.  Peter was knowledgeable, fun, and engaging throughout the day and made sure to our opinions into account for the stops.  The stops were all lovely and we greatly enjoyed his lunch and coffee recommendations.
 Highly recommend using Abdoul Agadir as the communication and experience from their team is of the highest quality!</p>
                         </div>
 
@@ -2614,7 +2704,7 @@ Better signage and communication for the pickup would be an improvement.</p>
 
     
     <div>
-        <h3>About</h3>
+        <h3>about</h3>
         <div>
             Abdoul Agadir  <br>
               <br>
